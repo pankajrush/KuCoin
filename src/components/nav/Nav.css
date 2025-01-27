@@ -1,0 +1,72 @@
+.navbar{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+.navbar ul{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+.navbar ul li{
+    list-style: none;
+}
+.navbar ul li:hover{
+    cursor: pointer;
+}
+.navbar .leftbar ul li img{
+    width: 100px;
+}
+.navbar .leftbar ul .divide{
+    color: rgba(0, 0, 0, 0.291);
+}
+.navbar .leftbar ul .rewards{
+    color: #34C9A4;
+    background-color: #EBFAF6;
+    padding: 6px 13px;
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 10px;
+}
+.navbar .leftbar ul .searchicon{
+    display: flex;
+    align-items: center;
+    padding: 7px px;
+    background-color: #F6F6F6;
+    padding: 7px 13px;
+    border-radius: 20px;
+}
+.navbar .leftbar ul .searchicon input{
+    width: 100px;
+    border: none;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+    background-color: #F6F6F6;
+}
+.navbar .rightbar .signup{
+    background-color: rgba(0, 0, 0, 0.846);
+    color: white;
+    padding: 9px 17px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.navbar .rightbar .login{
+    border: none;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: white;
+}
+.rightbar button:hover{
+    cursor: pointer;
+}

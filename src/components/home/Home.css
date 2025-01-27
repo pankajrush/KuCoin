@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.main {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ddf7ea;
+}
+.main img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.main .mainbody {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  display: flex;
+  gap: 10%;
+  padding: 0 7%;
+}
+.mainbody .leftmain {
+  padding-right: 30px;
+  padding-top: 50px;
+}
+.mainbody .leftmain h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  padding: 12px 0;
+}
+.mainbody .leftmain span {
+  color: #01bc8d;
+}
+.leftmain p {
+  font-size: 1.2rem;
+  color: rgba(128, 128, 128, 0.789);
+  padding: 10px 0 40px 0;
+}
+.leftmain .mainsignup {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.62);
+  width: 400px;
+  border: 0.5px solid rgba(128, 128, 128, 0.481);
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+.leftmain .mainsignup button {
+  color: white;
+  background-color: black;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+}
+.leftmain .mainsignup input {
+  border: none;
+  font-size: 15px;
+  outline: none;
+}
+.main .rightmain {
+  display: flex;
+  border: 1px solid rgb(237, 225, 225);
+  border-radius: 25px;
+  padding: 10px 30px;
+  background-color: rgba(255, 255, 255, 0.474);
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: move-vertically 3s ease-in-out infinite;
+}
+@keyframes move-vertically {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 20px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.rightmain p {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px;
+}
+.rightmain .qrcontainer {
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 15px;
+}
+.rightmain .qr {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.qr .viewmore {
+  color: #01bc8d;
+  font-size: 15px;
+}
