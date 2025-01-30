@@ -2,6 +2,7 @@ import React from "react";
 import "./Login.css";
 import logo from "../../assets/logokucoin.svg";
 import { useNavigate } from "react-router";
+import Chat from "../important/Chat";
 
 const login = () => {
 
@@ -14,6 +15,7 @@ const login = () => {
 
   return (
     <>
+      <Chat/>
       <div className="loginNav">
         <div className="leftlogin">
           <img src={logo} alt="" />

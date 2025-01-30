@@ -12,7 +12,7 @@
 .container {
     color: black;
     width: 400px;
-    border: 2px solid #01BC8D;
+    border: 2px solid red;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
