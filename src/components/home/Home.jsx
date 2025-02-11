@@ -3,8 +3,17 @@ import "./Home.css";
 import bgimg from "../../assets/bgimage.png";
 import qr from "../../assets/qr.png";
 import Nav from "../nav/Nav";
+import { useNavigate } from "react-router";
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
+  const handlesignup = (e) => {
+    e.preventDefault();
+    navigate('login');
+  }
+
   return (
     <>
       <Nav />
@@ -17,10 +26,10 @@ const Home = () => {
               on KuCoin
             </h1>
             <p>1 out of 4 Crypto Holders Worldwide Is with Kucoin</p>
-            <div className="mainsignup">
-              <input type="text" placeholder="Email/Phone Number" />
-              <button>Sign Up Now</button>
-            </div>
+            <form className="mainsignup">
+              <input type="email" placeholder="Email/Phone Number" required/>
+              <button onClick={handlesignup}>Sign Up Now</button>
+            </form>
           </div>
           <div className="rightmain">
             <div className="qr">
